@@ -1,15 +1,18 @@
 import React from 'react';
+import Parse from 'parse';
 
 import Navigation from './Navigation.jsx';
 import Landing from './Landing.jsx';
 import Footer from './Footer.jsx';
 import Profile from './Profile.jsx';
+import SignUp from './SignUp.jsx';
 
 class App extends React.Component {
 
   constructor(props) {
     super(props);
     this.state = {
+      currentUser: Parse.User.current(),
       currentRoute: props.router.current
     }
   }
@@ -24,6 +27,7 @@ class App extends React.Component {
 
   onRoute = () => {
     this.setState({
+      currentUser: Parse.User.current(),
       currentRoute: this.props.router.current
     });
   }
@@ -33,19 +37,24 @@ class App extends React.Component {
 
     switch(this.state.currentRoute) {
       case 'index' :
-        currentView = <Landing/>;
+        currentView = <Landing />;
         break;
       case 'profile' :
-        currentView = <Profile/>;
+        currentView = <Profile />;
+        break;
+      case 'signUp' :
+        currentView = <SignUp />;
         break;
       default :
-        currentView = <Landing/>;
+        currentView = <Landing />;
     };
 
     return (
       <div>
-        <Navigation/>
-        {currentView}
+        <div id="wrap">
+          <Navigation current={this.state.currentRoute} currentUser={this.state.currentUser}/>
+          {currentView}
+        </div>
         <Footer/>
       </div>
     );

@@ -1,18 +1,21 @@
-import $ from 'jquery';
-import _ from 'underscore';
-import Backbone from 'backbone';
-import React from 'react';
-import ReactDOM from 'react-dom';
-
 window.$ = window.jQuery = $;
 require('bootstrap');
 
+import $ from 'jquery';
+import Backbone from 'backbone';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Parse from 'parse';
+
+Parse.initialize(
+  "EaJ7PRSxYQaLXTgu4uT14OneQw8obZmes4UcZDju",
+  "0fGqYiYFkr9OSbsj5gS56J98b7xSOhmxmq3VKHdU"
+);
 
 import Router from './router';
 import App from './components/App.jsx';
 
 $(() => {
-  console.log('test')
   let router = new Router();
 
   ReactDOM.render(
@@ -21,6 +24,4 @@ $(() => {
   );
 });
 
-// _.templateSettings = {
-//   interpolate: /\{\{(.+?)\}\}/g
-// };
+window.Parse = Parse;

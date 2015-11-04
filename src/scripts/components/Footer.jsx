@@ -29,7 +29,7 @@ class Footer extends React.Component {
                 ·
                 <a href="#">Privacy Policy</a>
               </p>
-              <p>Kitch.tv &copy; 2015</p>
+              <p className="copyright">Kitch.tv &copy; 2015</p>
             </div>
           </div>
         </footer>

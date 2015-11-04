@@ -5,7 +5,8 @@ class Router extends Backbone.Router {
   get routes() {
     return {
       '' : 'index',
-      'user' : 'profile'
+      'user' : 'profile',
+      'register' : 'signUp'
     }
   }
 
@@ -15,6 +16,10 @@ class Router extends Backbone.Router {
 
   profile() {
     this.current = 'profile';
+  }
+
+  signUp() {
+    this.current = 'signUp';
   }
 
   initialize() {

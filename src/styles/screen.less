@@ -7,8 +7,17 @@
 @import url(https://fonts.googleapis.com/css?family=Merriweather);
 @import url(https://fonts.googleapis.com/css?family=Fauna+One);
 
+@footer-height: 120px;
+
 body {
   font-family: 'Fauna One', serif;
+  min-height: 100vh;
+}
+
+#wrap {
+  min-height: 100vh;
+  padding-bottom: @footer-height;
+  margin-bottom: -@footer-height;
 }
 
 //////////
@@ -279,6 +288,7 @@ body {
   text-align: left;
   font: normal 16px sans-serif;
   padding: 45px 50px;
+  height: @footer-height;
 }
 
 .footer-distributed .footer-left p{
