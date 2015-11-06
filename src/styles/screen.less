@@ -1,17 +1,18 @@
 @import "../../node_modules/bootstrap/less/bootstrap";
 @import "../../node_modules/font-awesome/less/font-awesome";
-@import "../../node_modules/bootstrap/less/glyphicons";
+
 
 @import url(https://fonts.googleapis.com/css?family=Yeseva+One);
 @import url(https://fonts.googleapis.com/css?family=Merriweather+Sans);
 @import url(https://fonts.googleapis.com/css?family=Merriweather);
 @import url(https://fonts.googleapis.com/css?family=Fauna+One);
 
-@footer-height: 120px;
+@footer-height: 190px;
 
 body {
   font-family: 'Fauna One', serif;
   min-height: 100vh;
+    background-color: #EFEFEB;
 }
 
 #wrap {
@@ -91,14 +92,6 @@ body {
 /*JUMBOTRON & RESPONSIVE VIDEO*/
 ////////////////////////////////
 
-.videofeature {
-  // background-color: rgb(230, 110, 245);
-}
-
-.profile-header-img > img.img-circle {
-
-}
-
 .jumbotron {
   background: url(images/kitchen2.jpeg) no-repeat;
   background-position: bottom;
@@ -139,6 +132,16 @@ body {
 .flex-video { padding-top: 0; }
 }
 
+.channelhover {
+  cursor: pointer;
+  opacity: .5;
+  border: solid 3px;
+}
+
+.channelhover:hover {
+  opacity: 1;
+}
+
 /////////////////
 /*FEATURED USER*/
 /////////////////
@@ -176,10 +179,15 @@ body {
 }
 
 .usertag {
-  background-color: rgba(119, 119, 119, .5);
+  background-color: rgba(119, 119, 119, .6);
+  color: #FCF2E5;
   border-radius: 27px;
+  padding: 5px;
+  margin: 0px 3px 0px 3px;
+}
 
-  margin: 20px;
+.usertaghead {
+  margin-top: 15px;
 }
 
 .jumbotron p {
@@ -189,7 +197,7 @@ body {
 }
 
 .morevids {
-  min-height: 100px;
+  min-height: 110px;
   background-color: rgba(0,0,0,0.4);
   margin-top: 30px;
   padding-top: 15px;
@@ -208,10 +216,6 @@ body {
 //////////////////
 /*WHATS TRENDING*/
 /////////////////
-
-.trending {
-  background-color: #EFEFEB;
-}
 
 .lead {
   margin-bottom: 0px;
@@ -237,6 +241,10 @@ body {
   }
 }
 
+.trendingtab {
+  box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
+}
+
 ////////////////////////
 /*BECOME A BROADCASTER*/
 ////////////////////////
@@ -245,15 +253,12 @@ body {
   background: url(images/kitchen1.jpeg) no-repeat;
   background-position: center;
   background-size: cover;
-
   height: 60vh;
-  z-index: 1;
 }
 
 .broadcasterinner {
   position: relative;
   top: 30%;
-  z-index: 9999;
   a {
     background-color: rgba(134, 214, 254, .7);
     border: 2px solid;
@@ -272,6 +277,7 @@ body {
 ///////////////////////
 
 .socialsection {
+
   background-color: #EFEFEB;
 
 }
@@ -351,26 +357,22 @@ body {
   }
 }
 
-//////////////////
-// PROFILE SIDEBAR
-//////////////////
-
-.nav-list {
-  padding-right: 15px;
+.copyright {
   padding-left: 15px;
-  margin-bottom: 0;
 }
 
-.well-lg {
-  border-radius: 0px;
-  border: 0px;
-  background-color: #F8F8F8;
+///////////////
+// PROFILE PAGE
+///////////////
+
+.profilebanner {
+  background-color: rgb(135, 59, 215);
+  border-radius: 10px;
+  height: auto;
+  padding-top: 100px;
+  margin: 0;
 }
 
-.userbanner1 {
-  background-image: url(http://www.fillmurray.com/300/200);
-}
+.usernamebanner {
 
-.col-md-3 {
-  padding-left: 0px;
 }

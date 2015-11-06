@@ -6,9 +6,7 @@ class Footer extends React.Component {
       <div>
         <footer className="footer-distributed">
           <div className="container">
-            <div className="footer-right">
-
-            </div>
+            
             <div className="footer-left">
               <p className="footer-links">
                 <a href="#">About</a>
