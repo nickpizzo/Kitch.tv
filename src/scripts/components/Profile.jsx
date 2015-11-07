@@ -7,18 +7,18 @@ class Profile extends React.Component {
         <div className="container">
           <br></br>
           <div className="row profilebanner">
-            <div className="col-sm-2"><a href="" className="pull-right"><img title="profile image" className="img-circle img-responsive" src="http://www.rlsandbox.com/img/profile.jpg"></img></a></div>
+            <div className="col-sm-2"><a href="" className="pull-right profilepic"><img title="profile image" className="img-circle" src="images/profilepic.png" width="150" height="150"></img></a></div>
             <div className="col-sm-10 usernamebanner">
               <h1 className="">nickpizzo</h1>
               <button type="button" className="btn btn-info"><i className="fa fa-cog"></i>Edit Profile</button>
-              <br></br>
+
             </div>
           </div>
           <br></br>
             <div className="row">
               <div className="col-sm-3">
                 <ul className="list-group">
-                  <li className="list-group-item text-muted" contenteditable="false">Profile</li>
+
                   <li className="list-group-item text-right"><span className="pull-left"><strong className="">Joined</strong></span> 2.13.2014</li>
                   <li className="list-group-item text-right"><span className="pull-left"><strong className="">Last seen</strong></span> Yesterday</li>
                   <li className="list-group-item text-right"><span className="pull-left"><strong className="">Real name</strong></span> Joseph Doe</li>
