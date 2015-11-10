@@ -11,40 +11,31 @@ class Profile extends React.Component {
             <div className="col-sm-10 usernamebanner">
               <h1 className="">nickpizzo</h1>
               <button type="button" className="btn btn-info"><i className="fa fa-cog"></i>Edit Profile</button>
-
             </div>
           </div>
           <br></br>
             <div className="row">
               <div className="col-sm-3">
-                <ul className="list-group">
-
-                  <li className="list-group-item text-right"><span className="pull-left"><strong className="">Joined</strong></span> 2.13.2014</li>
-                  <li className="list-group-item text-right"><span className="pull-left"><strong className="">Last seen</strong></span> Yesterday</li>
-                  <li className="list-group-item text-right"><span className="pull-left"><strong className="">Real name</strong></span> Joseph Doe</li>
-                  <li className="list-group-item text-right"><span className="pull-left"><strong className="">Role: </strong></span> Pet Sitter
-                  </li>
-                </ul>
-                <div className="panel panel-default">
-                  <div className="panel-heading">Insured / Bonded?
-                  </div>
-                  <div className="panel-body"><i className="fa fa-check-square"></i> Yes, I am insured and bonded.
-                  </div>
+                <div className="list-group">
+                  <div className="list-group-item profilenav"><span><i className="fa fa-video-camera">&nbsp;</i>Video Manager</span>&nbsp;</div>
+                  <div className="list-group-item profilenav"><span><i className="fa fa-calendar">&nbsp;</i>Schedule A Broadcast</span>&nbsp;</div>
+                  <div className="list-group-item profilenav"><span><i className="fa fa-envelope">&nbsp;</i>Messages</span><i className="badge badge-info">4</i></div>
+                  <div className="list-group-item profilenav"><span><i className="fa fa-heart">&nbsp;</i>Following</span>&nbsp;</div>
+                  <div className="list-group-item profilenav"><span><i className="fa fa-users">&nbsp;</i>Followers</span>&nbsp;</div>
+                  <div className="list-group-item profilenav"><span><i className="fa fa-bar-chart">&nbsp;</i>Statistics</span>&nbsp;</div>
                 </div>
-                <div className="panel panel-default">
-                  <div className="panel-heading">Website <i className="fa fa-link fa-1x"></i>
-                </div>
-                <div className="panel-body"><a href="http://bootply.com" className="">bootply.com</a>
+              <div className="panel panel-default">
+                <div className="panel-heading">Insured / Bonded?</div>
+                <div className="panel-body"><i className="fa fa-check-square"></i> Yes, I am insured and bonded.</div>
               </div>
-            </div>
+
             <ul className="list-group">
-              <li className="list-group-item text-muted">Activity <i className="fa fa-dashboard fa-1x"></i>
-            </li>
-            <li className="list-group-item text-right"><span className="pull-left"><strong className="">Shares</strong></span> 125</li>
-            <li className="list-group-item text-right"><span className="pull-left"><strong className="">Likes</strong></span> 13</li>
-            <li className="list-group-item text-right"><span className="pull-left"><strong className="">Posts</strong></span> 37</li>
-            <li className="list-group-item text-right"><span className="pull-left"><strong className="">Followers</strong></span> 78</li>
-          </ul>
+              <li className="list-group-item text-muted">Activity <i className="fa fa-dashboard fa-1x"></i></li>
+              <li className="list-group-item text-right"><span className="pull-left"><strong className="">Shares</strong></span> 125</li>
+              <li className="list-group-item text-right"><span className="pull-left"><strong className="">Likes</strong></span> 13</li>
+              <li className="list-group-item text-right"><span className="pull-left"><strong className="">Posts</strong></span> 37</li>
+              <li className="list-group-item text-right"><span className="pull-left"><strong className="">Followers</strong></span> 78</li>
+            </ul>
           <div className="panel panel-default">
             <div className="panel-heading">Social Media</div>
             <div className="panel-body">	<i className="fa fa-facebook fa-2x"></i>  <i className="fa fa-github fa-2x"></i>
@@ -54,63 +45,47 @@ class Profile extends React.Component {
         </div>
         <div className="col-sm-9" contenteditable="false">
           <div className="panel panel-default">
-            <div className="panel-heading">Starfox221's Bio</div>
-            <div className="panel-body"> A long description about me.</div>
+            <div className="panel-heading">Live Video</div>
+            <div className="panel-body">
+              <iframe width="819" height="461" src="http://www.ustream.tv/embed/21521464?html5ui" allowfullscreen webkitallowfullscreen scrolling="no" frameborder="0"></iframe>
+            </div>
           </div>
           <div className="panel panel-default target">
-            <div className="panel-heading" contenteditable="false">Pets I Own</div>
+            <div className="panel-heading" contenteditable="false">Previous Broadcasts</div>
             <div className="panel-body">
               <div className="row">
-                <div className="col-md-4">
-                  <div className="thumbnail">
-                    <img alt="300x200" src="http://lorempixel.com/600/200/people"></img>
-                      <div className="caption">
-                        <h3>
-                          Rover
-                        </h3>
-                        <p>
-                          Cocker Spaniel who loves treats.
-                        </p>
-                        <p>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-md-4">
-                    <div className="thumbnail">
-                      <img alt="300x200" src="http://lorempixel.com/600/200/city"></img>
-                        <div className="caption">
-                          <h3>
-                            Marmaduke
-                          </h3>
-                          <p>
-                            Is just another friendly dog.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-md-4">
-                      <div className="thumbnail">
-                        <img alt="300x200" src="http://lorempixel.com/600/200/sports"></img>
-                          <div className="caption">
-                            <h3>Rocky</h3>
-
-
-                            <p>Loves catnip and naps. Not fond of children.</p>
-                          </div>
-                        </div>
-                      </div>
+                <div className="col-xs-3 col-md-3 text-center">
+                  <img src="http://bootsnipp.com/apple-touch-icon-114x114-precomposed.png" alt="bootsnipp" className="img-rounded img-responsive"></img>
+                </div>
+                <div className="col-xs-9 col-md-9 section-box">
+                  <h3>Bootsnipp</h3>
+                  <p>Design elements, playground and code snippets for Bootstrap HTML/CSS/JS framework</p>
+                  <div className="row rating-desc">
+                    <div className="col-md-12 ">
+                      <span className="fa fa-heart heartcolor"></span>
+                      <span className="fa fa-heart heartcolor"></span>
+                      <span className="fa fa-heart heartcolor"></span>
+                      <span className="fa fa-heart heartcolor"></span>
+                      <span className="fa fa-heart-o heartcolor"></span>
+                      <span>(36)</span>
+                      <span className="separator">|</span>
+                      <span className="fa fa-comment commentcolor">&nbsp;</span>
+                      <span>(100 Comments)</span>
                     </div>
                   </div>
                 </div>
-          <div className="panel panel-default">
-            <div className="panel-heading">Starfox221's Bio</div>
-            <div className="panel-body"> A long description about me.</div>
+              </div>
+            </div>
+
+          </div>
+              <div className="panel panel-default">
+                <div className="panel-heading">Starfox221's Bio</div>
+                <div className="panel-body"> A long description about me.</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
     )
   }
 }

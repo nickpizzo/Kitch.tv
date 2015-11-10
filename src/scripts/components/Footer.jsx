@@ -5,8 +5,8 @@ class Footer extends React.Component {
     return(
       <div>
         <footer className="footer-distributed">
-          <div className="container">
-            
+          <div className="container footeritems">
+
             <div className="footer-left">
               <p className="footer-links">
                 <a href="#">About</a>

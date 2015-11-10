@@ -110,7 +110,14 @@ class Landing extends React.Component {
         </div>
         <div className="socialsection">
           <div className="container kitchnews text-center">
-            <h1>test</h1>
+            <h2>Follow the latest Kitch news</h2>
+              <div class="row">
+            		<button className="btn btn-facebook btn-lg btn3d"><i className="fa fa-facebook-official">&nbsp;</i>Facebook</button>
+            		<button className="btn btn-google btn-lg btn3d"><i className="fa fa-google">&nbsp;</i>Google</button>
+            		<button className="btn btn-twitter btn-lg btn3d"><i className="fa fa-twitter">&nbsp;</i>Twitter</button>
+            		<button className="btn btn-pinterest btn-lg btn3d"><i className="fa fa-pinterest">&nbsp;</i>Pinterest</button>
+                <button className="btn btn-tumblr btn-lg btn3d"><i className="fa fa-tumblr">&nbsp;</i>Tumblr</button>
+            	</div>
           </div>
         </div>
       </div>
