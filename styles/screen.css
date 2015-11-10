@@ -8865,7 +8865,7 @@ body {
 }
 /*JUMBOTRON & RESPONSIVE VIDEO*/
 .jumbotron {
-  background: url(images/kitchen2.jpeg) no-repeat;
+  background: url('../images/kitchen2.jpeg') no-repeat;
   background-position: bottom;
   background-size: cover;
   height: auto;
@@ -8992,7 +8992,7 @@ body {
 }
 /*BECOME A BROADCASTER*/
 .broadcaster {
-  background: url(images/kitchen1.jpeg) no-repeat;
+  background: url('../images/kitchen1.jpeg') no-repeat;
   background-position: center;
   background-size: cover;
   height: 80vh;
@@ -9140,7 +9140,7 @@ body {
   height: auto;
   padding-top: 120px;
   margin: 0;
-  background: url(images/tomatoes.png);
+  background: url('../images/tomatoes.png');
   padding-bottom: 10px;
   border: 1px solid;
 }
