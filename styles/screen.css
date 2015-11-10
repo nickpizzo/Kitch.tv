@@ -8932,11 +8932,8 @@ body {
   font-size: 18px;
   box-shadow: 1px 8px 36px 4px rgba(0, 0, 0, 0.9);
 }
-#circle1 {
+.fa-circle {
   color: #54c35c;
-}
-#circle2 {
-  color: red;
 }
 .usertag {
   background-color: rgba(119, 119, 119, 0.6);
@@ -9151,6 +9148,10 @@ body {
   box-shadow: 0px 0px 0px 8px #EFEFEB;
   border-radius: 100px;
 }
+.profilenav:hover {
+  cursor: pointer;
+  background-color: #dbdbdb;
+}
 .usernamebanner {
   margin-bottom: 10px;
 }
@@ -9186,11 +9187,15 @@ body {
 .morevidtitle {
   margin-top: 0px;
 }
+.broadcastbuttons {
+  margin-bottom: 20px;
+}
 .previousbroadcastitem {
-  margin: 10px;
+  margin: 10px 10px 20px 10px;
   padding: 5px;
   border-radius: 5px;
-  background-color: #ebebeb;
+  background-color: #e4e4e4;
+  border: 1px solid #858585;
 }
 .previousbroadcastinfo {
   margin-bottom: 3px;
@@ -9202,41 +9207,9 @@ body {
   padding-top: 7px;
   padding-bottom: 5px;
 }
-.panel-heading {
+.panel-default > .panel-heading {
+  background-color: rgba(106, 255, 255, 0.4);
   font-weight: bolder;
   font-size: 16px;
-}
-.panel-default > .panel-heading {
-  background-color: rgba(86, 192, 224, 0.4);
-}
-.btn-newlive {
-  background-color: #004200 !important;
-  background-repeat: repeat-x;
-  background-image: -khtml-gradient(linear, left top, left bottom, from(#19ff19), to(#004200));
-  background-image: -moz-linear-gradient(top, #19ff19, #004200);
-  background-image: -ms-linear-gradient(top, #19ff19, #004200);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #19ff19), color-stop(100%, #004200));
-  background-image: -webkit-linear-gradient(top, #19ff19, #004200);
-  background-image: -o-linear-gradient(top, #19ff19, #004200);
-  background-image: linear-gradient(#19ff19, #004200);
-  color: #fff !important;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.69);
-  -webkit-font-smoothing: antialiased;
-  border-radius: 5px;
-}
-.btn-newarchived {
-  background-color: #575400 !important;
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f9f100", endColorstr="#565300");
-  background-image: -khtml-gradient(linear, left top, left bottom, from(#f9f100), to(#565300));
-  background-image: -moz-linear-gradient(top, #f9f100, #565300);
-  background-image: -ms-linear-gradient(top, #f9f100, #565300);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f9f100), color-stop(100%, #565300));
-  background-image: -webkit-linear-gradient(top, #f9f100, #565300);
-  background-image: -o-linear-gradient(top, #f9f100, #565300);
-  background-image: linear-gradient(#f9f100, #565300);
-  color: #fff !important;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.52);
-  -webkit-font-smoothing: antialiased;
-  border-radius: 5px;
+  border: 1px solid #b5b5b5;
 }
