@@ -8932,8 +8932,11 @@ body {
   font-size: 18px;
   box-shadow: 1px 8px 36px 4px rgba(0, 0, 0, 0.9);
 }
-.fa-circle {
+#circle1 {
   color: #54c35c;
+}
+#circle2 {
+  color: red;
 }
 .usertag {
   background-color: rgba(119, 119, 119, 0.6);
@@ -9016,6 +9019,57 @@ body {
   position: relative;
   top: 30%;
 }
+.btn3d {
+  position: relative;
+  border: 0;
+  border-radius: 3px;
+  margin: 15px 10px 0 0;
+  transition: all .09s linear;
+  box-shadow: 0 0 0 1px transparent inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 6px 6px 0 0 #ccc, 6px 6px 0 1px rgba(0, 0, 0, 0.2), 6px 6px 3px 0px rgba(0, 0, 0, 0.3);
+  outline: medium none;
+}
+.btn3d:active {
+  top: 7px;
+}
+.btn3d:focus {
+  outline: medium none;
+  -moz-outline-style: none;
+}
+.btn3d.btn-default {
+  background-color: #f5f5f5;
+}
+.btn-facebook {
+  background-color: #3b5998;
+  color: #fff;
+}
+.btn-google {
+  background-color: #dd4b39;
+  color: #fff;
+}
+.btn-twitter {
+  background-color: #2ba9e1;
+  color: #fff;
+}
+.btn-pinterest {
+  background-color: #cb2027;
+  color: #fff;
+}
+.btn-tumblr {
+  background-color: #2c4762;
+  color: #fff;
+}
+.btn-facebook:hover,
+.btn-facebook:focus,
+.btn-twitter:hover,
+.btn-twitter:focus,
+.btn-google:hover,
+.btn-google:focus,
+.btn-tumblr:hover,
+.btn-tumblr:focus,
+.btn-pinterest:hover,
+.btn-pinterest:focus {
+  color: #a6a6a6;
+}
 .footer-distributed {
   background-color: #33383B;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
@@ -9088,6 +9142,7 @@ body {
   margin: 0;
   background: url(images/tomatoes.png);
   padding-bottom: 10px;
+  border: 1px solid;
 }
 .profilepic {
   position: absolute;
@@ -9128,54 +9183,60 @@ body {
 .commentcolor {
   color: blue;
 }
-.btn3d {
-  position: relative;
-  border: 0;
-  border-radius: 3px;
-  margin: 15px 10px 0 0;
-  transition: all .09s linear;
-  box-shadow: 0 0 0 1px transparent inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 6px 6px 0 0 #ccc, 6px 6px 0 1px rgba(0, 0, 0, 0.2), 6px 6px 3px 0px rgba(0, 0, 0, 0.3);
-  outline: medium none;
+.morevidtitle {
+  margin-top: 0px;
 }
-.btn3d:active {
-  top: 7px;
+.previousbroadcastitem {
+  margin: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #ebebeb;
 }
-.btn3d:focus {
-  outline: medium none;
-  -moz-outline-style: none;
+.previousbroadcastinfo {
+  margin-bottom: 3px;
 }
-.btn3d.btn-default {
-  background-color: #f5f5f5;
+.previousbraodcasttitle {
+  font-weight: bold;
 }
-.btn-facebook {
-  background-color: #3b5998;
-  color: #fff;
+.previousbroadcastimage {
+  padding-top: 7px;
+  padding-bottom: 5px;
 }
-.btn-google {
-  background-color: #dd4b39;
-  color: #fff;
+.panel-heading {
+  font-weight: bolder;
+  font-size: 16px;
 }
-.btn-twitter {
-  background-color: #2ba9e1;
-  color: #fff;
+.panel-default > .panel-heading {
+  background-color: rgba(86, 192, 224, 0.4);
 }
-.btn-pinterest {
-  background-color: #cb2027;
-  color: #fff;
+.btn-newlive {
+  background-color: #004200 !important;
+  background-repeat: repeat-x;
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#19ff19), to(#004200));
+  background-image: -moz-linear-gradient(top, #19ff19, #004200);
+  background-image: -ms-linear-gradient(top, #19ff19, #004200);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #19ff19), color-stop(100%, #004200));
+  background-image: -webkit-linear-gradient(top, #19ff19, #004200);
+  background-image: -o-linear-gradient(top, #19ff19, #004200);
+  background-image: linear-gradient(#19ff19, #004200);
+  color: #fff !important;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.69);
+  -webkit-font-smoothing: antialiased;
+  border-radius: 5px;
 }
-.btn-tumblr {
-  background-color: #2c4762;
-  color: #fff;
-}
-.btn-facebook:hover,
-.btn-facebook:focus,
-.btn-twitter:hover,
-.btn-twitter:focus,
-.btn-google:hover,
-.btn-google:focus,
-.btn-tumblr:hover,
-.btn-tumblr:focus,
-.btn-pinterest:hover,
-.btn-pinterest:focus {
-  color: #a6a6a6;
+.btn-newarchived {
+  background-color: #575400 !important;
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f9f100", endColorstr="#565300");
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#f9f100), to(#565300));
+  background-image: -moz-linear-gradient(top, #f9f100, #565300);
+  background-image: -ms-linear-gradient(top, #f9f100, #565300);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f9f100), color-stop(100%, #565300));
+  background-image: -webkit-linear-gradient(top, #f9f100, #565300);
+  background-image: -o-linear-gradient(top, #f9f100, #565300);
+  background-image: linear-gradient(#f9f100, #565300);
+  color: #fff !important;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.52);
+  -webkit-font-smoothing: antialiased;
+  border-radius: 5px;
 }
