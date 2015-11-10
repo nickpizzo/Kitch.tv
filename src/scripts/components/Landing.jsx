@@ -39,20 +39,18 @@ class Landing extends React.Component {
           <div className="morevids">
             <div className="container">
               <div className="row">
-                <div className="col-xs-2"></div>
-                <div className="col-xs-2">
-                  <img className="channelhover" src="images/morevids1.jpg" width="135" height="90"></img>
+                <div className="col-sm-offset-0 col-sm-6 col-md-offset-2 col-md-2">
+                  <img className="channelhover img-responsive" src="images/morevids1.jpg" />
                 </div>
-                <div className="col-xs-2">
-                  <img className="channelhover" src="images/morevids2.jpg" width="135" height="90"></img>
+                <div className="col-sm-6 col-md-2">
+                  <img className="channelhover img-responsive" src="images/morevids2.jpg" />
                 </div>
-                <div className="col-xs-2">
-                  <img className="channelhover" src="images/morevids3.jpeg" width="135" height="90"></img>
+                <div className="col-sm-6 col-md-2">
+                  <img className="channelhover img-responsive" src="images/morevids3.jpeg" />
                 </div>
-                <div className="col-xs-2">
-                  <img className="channelhover" src="images/morevids4.jpg" width="135" height="90"></img>
+                <div className="col-sm-6 col-md-2">
+                  <img className="channelhover img-responsive" src="images/morevids4.jpg" />
                 </div>
-                <div className="col-xs-2"></div>
               </div>
             </div>
           </div>
