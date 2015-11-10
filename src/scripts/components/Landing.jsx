@@ -16,7 +16,7 @@ class Landing extends React.Component {
                 <div className="profile-header-img">
                   <img className="img-circle" src="images/featureduser.png" />
                   <div className="rank-label-container">
-                    <span className="label label-default rank-label"><i className="fa fa-circle"></i>&nbsp;GreenBrother2</span>
+                    <span className="label label-default rank-label"><i className="fa fa-circle" id="circle1"></i>&nbsp;GreenBrother2</span>
                   </div>
                   <div>
                     <div className="usertaghead">

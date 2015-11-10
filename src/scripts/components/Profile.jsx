@@ -45,21 +45,26 @@ class Profile extends React.Component {
         </div>
         <div className="col-sm-9" contenteditable="false">
           <div className="panel panel-default">
-            <div className="panel-heading">Live Video</div>
+            <div className="panel-heading">Live Video - <i className="fa fa-circle" id="circle2">&nbsp;</i>Offline</div>
             <div className="panel-body">
               <iframe width="819" height="461" src="http://www.ustream.tv/embed/21521464?html5ui" allowfullscreen webkitallowfullscreen scrolling="no" frameborder="0"></iframe>
+            </div>
+            <div className="text-center">
+              <button className="btn btn-newlive">New Live Broadcast</button>
+              <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+              <button className="btn btn-newarchived">New Archived Broadcast</button>
             </div>
           </div>
           <div className="panel panel-default target">
             <div className="panel-heading" contenteditable="false">Previous Broadcasts</div>
             <div className="panel-body">
-              <div className="row">
+              <div className="row previousbroadcastitem">
                 <div className="col-xs-3 col-md-3 text-center">
-                  <img src="http://bootsnipp.com/apple-touch-icon-114x114-precomposed.png" alt="bootsnipp" className="img-rounded img-responsive"></img>
+                  <img src="images/previous1.png" className="img-rounded img-responsive previousbroadcastimage"></img>
                 </div>
                 <div className="col-xs-9 col-md-9 section-box">
-                  <h3>Bootsnipp</h3>
-                  <p>Design elements, playground and code snippets for Bootstrap HTML/CSS/JS framework</p>
+                  <h4 className="previousbraodcasttitle">Veggie Lo Main</h4>
+                  <p className="previousbroadcastinfo">Design elements, playground and code snippets for Bootstrap HTML/CSS/JS framework</p>
                   <div className="row rating-desc">
                     <div className="col-md-12 ">
                       <span className="fa fa-heart heartcolor"></span>
@@ -67,14 +72,15 @@ class Profile extends React.Component {
                       <span className="fa fa-heart heartcolor"></span>
                       <span className="fa fa-heart heartcolor"></span>
                       <span className="fa fa-heart-o heartcolor"></span>
-                      <span>(36)</span>
+                      <span>(12)</span>
                       <span className="separator">|</span>
                       <span className="fa fa-comment commentcolor">&nbsp;</span>
-                      <span>(100 Comments)</span>
+                      <span>(8 Comments)&nbsp;<i className="fa fa-caret-down"></i></span>
                     </div>
                   </div>
                 </div>
               </div>
+
             </div>
 
           </div>

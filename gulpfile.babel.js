@@ -51,7 +51,7 @@ gulp.task('styles', ['fonts'], () => {
     gutil.log(gutil.colors.red('Error: ' + error.message));
     gutil.beep();
   }))
-  .pipe(gulp.dest('dist'))
+  .pipe(gulp.dest('dist/styles'))
   .pipe(sync.reload({
     stream: true
   }));
