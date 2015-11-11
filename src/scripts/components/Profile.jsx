@@ -52,7 +52,7 @@ class Profile extends React.Component {
                     </div>
                     <div className="col-xs-9 col-md-9 section-box">
                       <h4 className="previousbraodcasttitle">Veggie Lo Main</h4>
-                      <p className="previousbroadcastinfo">Design elements, playground and code snippets for Bootstrap HTML/CSS/JS framework</p>
+                      <p className="previousbroadcastinfo">Vegetable Oil, Shiitake, Napa Cabbage, Kosher Salt, Carrots, Snow Peas, Garlic, Ginger, Scallions, Lo Mein Noodles, Low Sodium Soy Sauce, Sesame Seeds, Cilatro</p>
                       <div className="row rating-desc">
                         <div className="col-md-12 ">
                           <span className="fa fa-heart heartcolor"></span>
@@ -74,7 +74,7 @@ class Profile extends React.Component {
                     </div>
                     <div className="col-xs-9 col-md-9 section-box">
                       <h4 className="previousbraodcasttitle">Whole Foods Trip #3</h4>
-                      <p className="previousbroadcastinfo">Design elements, playground and code snippets for Bootstrap HTML/CSS/JS framework</p>
+                      <p className="previousbroadcastinfo">Neighborhood Staple for locally grown organic foods</p>
                       <div className="row rating-desc">
                         <div className="col-md-12 ">
                           <span className="fa fa-heart heartcolor"></span>
@@ -96,7 +96,7 @@ class Profile extends React.Component {
                     </div>
                     <div className="col-xs-9 col-md-9 section-box">
                       <h4 className="previousbraodcasttitle">Strawberry Lime Popsicles</h4>
-                      <p className="previousbroadcastinfo">Design elements, playground and code snippets for Bootstrap HTML/CSS/JS framework</p>
+                      <p className="previousbroadcastinfo">Everyone loves them in our family and the only thing better than this is the sour cherry version. Easy and fast to put together.</p>
                       <div className="row rating-desc">
                         <div className="col-md-12 ">
                           <span className="fa fa-heart heartcolor"></span>
