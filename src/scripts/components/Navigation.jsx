@@ -7,6 +7,7 @@ class SessionNavigation extends React.Component {
   handleSignOut = () => {
     Parse.User.logOut();
     Backbone.history.navigate('/', true);
+    window.location.reload();
   }
 
   handleSignIn = (event) => {
@@ -30,11 +31,11 @@ class SessionNavigation extends React.Component {
               <li className="dropdown">
                 <a href="#" className="dropdown-toggle" data-toggle="dropdown"><i className="fa fa-user">&nbsp;</i>My Account<span className="caret"></span></a>
                 <ul className="dropdown-menu" role="menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
+                  <li><a href="#">Profile</a></li>
+                  <li><a href="#">Channels</a></li>
+                  <li><a href="#">Messages</a></li>
                   <li className="divider"></li>
-                  <li><a href="#">Separated link</a></li>
+                  <li><a href="#">Settings</a></li>
                   <li className="divider"></li>
                   <li><a href="#" onClick={this.handleSignOut}>Sign Out</a></li>
                 </ul>

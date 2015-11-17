@@ -7,9 +7,12 @@ export default class SignUp extends React.Component {
     event.preventDefault();
 
     var user = new Parse.User();
+    user.set("firstname", this.refs.firstname.value);
+    user.set("lastname", this.refs.lastname.value);
     user.set("username", this.refs.username.value);
     user.set("password", this.refs.password.value);
     user.set("email", this.refs.email.value);
+
 
     user.signUp(null, {
       success: function(user) {
@@ -25,28 +28,39 @@ export default class SignUp extends React.Component {
 
   render () {
     return (
-      <div className="container signup">
-        <div className="jumbotron col-md-offset-2 col-md-8">
-          <form className="form-signin" onSubmit={this.handleSubmit}>
-            <h2 className="form-signin-heading">
-              Sign Up
-            </h2>
-            <label className="sr-only" htmlFor="inputUsername">
-              Username
-            </label>
-            <input autofocus className="form-control" id="inputUsername" placeholder="Username" ref="username" required type="text"/>
-            <label className="sr-only" htmlFor="inputEmail">
-              Email address
-            </label>
-            <input className="form-control" id="inputEmail" placeholder="Email address" ref="email" required type="email"/>
-            <label className="sr-only" htmlFor="inputPassword">Password</label>
-            <input className="form-control" id="inputPassword" placeholder="Password" ref="password" required type="password"/>
-            <button className="btn btn-lg btn-primary btn-block" type="submit">
-              Sign in
-            </button>
-          </form>
-        </div>
-      </div>
+      <div>
+
+
+<form onSubmit={this.handleSubmit}>
+  <div className="container">
+    <div className="form-group">
+      <label className="sr-only">First Name</label>
+      <input ref="firstname" className="form-control" placeholder="First Name"/>
+    </div>
+    <div className="form-group">
+      <label className="sr-only">Last Name</label>
+      <input ref="lastname" className="form-control" placeholder="Last Name"/>
+    </div>
+    <div className="form-group">
+      <label className="sr-only">Username</label>
+      <input ref="username" className="form-control" placeholder="Username"/>
+    </div>
+    <div className="form-group">
+      <label className="sr-only">Email</label>
+      <input ref="email" type="email" className="form-control" placeholder="Email"/>
+    </div>
+    <div className="form-group">
+      <label className="sr-only">Password</label>
+      <input ref="password" type="password" className="form-control" placeholder="Password"/>
+    </div>
+
+    <button type="submit" className="btn btn-success">Sign Me Up!</button>
+    Already have an acount? <a href="#">Sign in Here!</a>
+  </div>
+</form>
+
+</div>
+
     );
   }
 }
