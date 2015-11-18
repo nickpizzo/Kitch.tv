@@ -6,8 +6,9 @@ class SessionNavigation extends React.Component {
 
   handleSignOut = () => {
     Parse.User.logOut();
-    Backbone.history.navigate('/', true);
+    Backbone.history.navigate('/demo', true);
     window.location.reload();
+
   }
 
   handleSignIn = (event) => {

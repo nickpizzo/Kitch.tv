@@ -4,10 +4,15 @@ class Router extends Backbone.Router {
 
   get routes() {
     return {
-      '' : 'index',
+      '' : 'splash',
+      'demo' : 'index',
       'user' : 'profile',
       'register' : 'signUp'
     }
+  }
+
+  splash() {
+    this.current = 'splash';
   }
 
   index() {

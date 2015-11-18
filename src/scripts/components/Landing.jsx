@@ -1,13 +1,27 @@
 import React from 'react';
+import Parse from 'parse';
+
+import Navigation from './Navigation.jsx';
+import Footer from './Footer.jsx';
 
 class Landing extends React.Component {
+
+  onRoute = () => {
+    this.setState({
+      currentUser: Parse.User.current(),
+      currentRoute: this.props.router.current
+    });
+  }
+
   render () {
     return (
       <div>
+        <div id="wrap">
+        <Navigation />
         <div className="jumbotron jumbotron-fluid">
           <div className="container">
             <div className="row">
-              <div className="col-lg-7 col-lg-offset-1 videofeature">
+              <div className="col-lg-7 col-lg-offset-1">
                 <div className="flex-video widescreen">
                   <iframe allowFullScreen="" src="https://www.youtube.com/embed/Jj1fhYZJjek?modestbranding=1&autohide=1&showinfo=0&controls=0&=0&autoplay=1"></iframe>
                 </div>
@@ -118,6 +132,8 @@ class Landing extends React.Component {
             	</div>
           </div>
         </div>
+      </div>
+      <Footer />
       </div>
     );
   }

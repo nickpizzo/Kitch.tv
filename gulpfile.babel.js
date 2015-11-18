@@ -15,7 +15,7 @@ gulp.task('html', () => {
     .pipe(sync.reload({
       stream: true
     }));
-    gulp.src('src/CNAME').pipe(gulp.dest('dist'))
+    gulp.src('src/CNAME').pipe(gulp.dest('dist'));
 });
 
 gulp.task('json', () => {
@@ -79,7 +79,6 @@ gulp.task("deploy", ["build"], () => {
 gulp.task('serve', ['build'], () => {
   sync.init({
     server: 'dist',
-    browser: 'google chrome canary'
   });
 
   gulp.watch('src/**/*.html', ['html']);

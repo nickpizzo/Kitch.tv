@@ -6,6 +6,7 @@ import Landing from './Landing.jsx';
 import Footer from './Footer.jsx';
 import Profile from './Profile.jsx';
 import SignUp from './SignUp.jsx';
+import SplashPage from './SplashPage.jsx';
 
 class App extends React.Component {
 
@@ -36,6 +37,9 @@ class App extends React.Component {
     let currentView;
 
     switch(this.state.currentRoute) {
+      case 'splash' :
+        currentView = <SplashPage />;
+        break;
       case 'index' :
         currentView = <Landing />;
         break;
@@ -46,16 +50,12 @@ class App extends React.Component {
         currentView = <SignUp />;
         break;
       default :
-        currentView = <Landing />;
+        currentView = <SplashPage />;
     };
 
     return (
       <div>
-        <div id="wrap">
-          <Navigation current={this.state.currentRoute} currentUser={this.state.currentUser}/>
           {currentView}
-        </div>
-        <Footer/>
       </div>
     );
   }
