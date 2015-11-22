@@ -8,7 +8,9 @@
     "gh-pages": "^0.4.0",
     "gulp": "^3.9.0",
     "gulp-less": "^3.0.3",
+    "gulp-minify-css": "^1.2.1",
     "gulp-util": "^3.0.6",
+    "imagemin": "^4.0.0",
     "moment": "^2.10.6",
     "normalize.css": "^3.0.3",
     "vinyl-source-stream": "^1.1.0"

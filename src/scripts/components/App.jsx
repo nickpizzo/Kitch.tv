@@ -7,6 +7,8 @@ import Footer from './Footer.jsx';
 import Profile from './Profile.jsx';
 import SignUp from './SignUp.jsx';
 import SplashPage from './SplashPage.jsx';
+import MailchimpSignup from './MailchimpSignup.jsx';
+
 
 class App extends React.Component {
 

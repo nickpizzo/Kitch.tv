@@ -23,7 +23,7 @@ class Landing extends React.Component {
             <div className="row">
               <div className="col-lg-7 col-lg-offset-1">
                 <div className="flex-video widescreen">
-                  <iframe allowFullScreen="" src="https://www.youtube.com/embed/Jj1fhYZJjek?modestbranding=1&autohide=1&showinfo=0&controls=0&=0&autoplay=1"></iframe>
+                  <iframe allowFullScreen="" src="https://www.youtube.com/embed/Jj1fhYZJjek?modestbranding=1&autohide=1&showinfo=0&=0&autoplay=1"></iframe>
                 </div>
               </div>
               <div className="col-lg-3 text-center">

@@ -6,9 +6,12 @@ import browserSync from 'browser-sync';
 import less from 'gulp-less';
 import ghPages from 'gh-pages';
 import gutil from 'gulp-util';
+// import imagemin from 'imagemin';
+// import minifyCSS from 'gulp-minify-css';
 
 const sync = browserSync.create();
 
+//HTML
 gulp.task('html', () => {
   gulp.src('src/**/*.html')
     .pipe(gulp.dest('dist'))
@@ -26,6 +29,7 @@ gulp.task('json', () => {
     }));
 });
 
+//Scripts
 gulp.task('script', () => {
   browserify({
     entries: ['./src/scripts/main.jsx'],
@@ -45,9 +49,11 @@ gulp.task('script', () => {
   }));
 });
 
+//Styles
 gulp.task('styles', ['fonts'], () => {
   gulp.src('src/styles/**/*.{css,less}')
   .pipe(less()
+  // .pipe(minifyCSS())
   .on('error', (error) => {
     gutil.log(gutil.colors.red('Error: ' + error.message));
     gutil.beep();
@@ -61,6 +67,7 @@ gulp.task('styles', ['fonts'], () => {
 // Images
 gulp.task('images', () => {
   gulp.src('src/styles/images/*')
+    // .pipe(imagemin())
     .pipe(gulp.dest('dist/images'))
 });
 
