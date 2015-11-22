@@ -8,6 +8,7 @@
 @import url(https://fonts.googleapis.com/css?family=Merriweather+Sans);
 @import url(https://fonts.googleapis.com/css?family=Merriweather);
 @import url(https://fonts.googleapis.com/css?family=Fauna+One);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -8808,25 +8809,25 @@ body {
 }
 /*SPLASH PAGE*/
 .fullpage {
-  background: url('../images/kitchen3.jpeg') no-repeat center center fixed;
+  background: url("../images/kitchen3.jpeg") no-repeat center center fixed;
   background-size: cover;
   height: 100vh;
 }
 .fullpage h4 {
-  color: #F76652;
+  color: #f76652;
   font-style: italic;
   font-weight: bolder;
 }
 #splashimage {
   height: 280px;
-  width: 520px;
+  width: 561px;
   margin-top: 10%;
 }
 .splashbuttons {
   padding-top: 40px;
 }
 .splashbuttons ul li a {
-  background-color: #D3D3D3;
+  background-color: rgba(210, 210, 210, 0.7);
 }
 ul.social-network {
   list-style: none;
@@ -8838,41 +8839,36 @@ ul.social-network li {
   display: inline;
   margin: 0 5px;
 }
-/* footer social icons */
-.social-network a.icoRss:hover {
-  background-color: #F56505;
+.social-network a.icoInstagram:hover {
+  background-color: #675041;
 }
 .social-network a.icoFacebook:hover {
-  background-color: #3B5998;
+  background-color: #3b5998;
 }
 .social-network a.icoTwitter:hover {
-  background-color: #33ccff;
+  background-color: #3cf;
 }
-.social-network a.icoGoogle:hover {
-  background-color: #BD3518;
+.social-network a.icoYoutube:hover {
+  background-color: #E91D00;
 }
-.social-network a.icoVimeo:hover {
-  background-color: #0590B8;
+.social-network a.icoPinterest:hover {
+  background-color: #BF0010;
 }
-.social-network a.icoLinkedin:hover {
-  background-color: #007bb7;
-}
-.social-network a.icoRss:hover i,
+.social-network a.icoInstagram:hover i,
 .social-network a.icoFacebook:hover i,
 .social-network a.icoTwitter:hover i,
-.social-network a.icoGoogle:hover i,
-.social-network a.icoVimeo:hover i,
-.social-network a.icoLinkedin:hover i {
+.social-network a.icoYoutube:hover i,
+.social-network a.icoPinterest:hover i {
   color: #fff;
 }
 a.socialIcon:hover,
 .socialHoverClass {
-  color: #44BCDD;
+  color: #44bcdd;
 }
 .social-circle li a {
   display: inline-block;
   position: relative;
-  margin: 0 auto 0 auto;
+  margin: 0 auto;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
@@ -9312,4 +9308,52 @@ a.socialIcon:hover,
   font-weight: bolder;
   font-size: 16px;
   border: 1px solid #b5b5b5;
+}
+#mc_embed_signup {
+  position: relative;
+  top: 8%;
+}
+.clear {
+  display: inline;
+}
+.hiddenSignUp {
+  display: none;
+}
+.mailchimpsubmit {
+  background-color: rgba(43, 37, 37, 0.7);
+  box-shadow: 0px 4px 65px -6px rgba(0, 0, 0, 0.75);
+  width: 7em;
+  height: 1.7em;
+  font-size: 1.7em;
+  border: none;
+  color: white;
+  font-family: 'Open Sans';
+  border-radius: 100px;
+  padding: 0px;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.mailchimpsubmit:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  transform: scale(1.05);
+}
+.mailchimpsubmit:active {
+  color: #b9b9b9;
+  transition: transform .05s;
+  transform: scale(0.95);
+  box-shadow: 0px 4px 65px 2px rgba(0, 0, 0, 0.75);
+}
+.mailchimpemail {
+  background-color: rgba(11, 11, 11, 0.16);
+  box-shadow: 0px 4px 65px -6px rgba(0, 0, 0, 0.75);
+  width: 13em;
+  height: 1.7em;
+  font-size: 1.7em;
+  border: none;
+  color: white;
+  font-family: 'Open Sans';
+  border-radius: 5px;
+  padding-left: 10px;
+}
+.mailchimpemail::-webkit-input-placeholder {
+  color: white;
 }
