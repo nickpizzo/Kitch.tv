@@ -8819,8 +8819,7 @@ body {
   font-weight: bolder;
 }
 #splashimage {
-  height: 280px;
-  width: 561px;
+  max-width: 40%;
   margin-top: 10%;
 }
 .splashbuttons {
@@ -9356,4 +9355,12 @@ a.socialIcon:hover,
 }
 .mailchimpemail::-webkit-input-placeholder {
   color: white;
+}
+@media screen and (max-width: 484px) {
+  .mailchimpemail::-webkit-input-placeholder {
+    text-align: center;
+  }
+  .mailchimpsubmit {
+    margin-top: 10px;
+  }
 }
