@@ -11,9 +11,7 @@ class MailchimpSignup extends React.Component {
             </div>
             <span>&nbsp;</span>
             <span>&nbsp;</span>
-            <div className="clear">
-              <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" className="mailchimpsubmit"/>
-            </div>
+            <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" className="mailchimpsubmit"/>
         </form>
       </div>
     )

@@ -37,8 +37,7 @@ body {
   }
 }
 #splashimage {
-  height: 280px;
-  width: 561px;
+  max-width: 40%;
   margin-top: 10%;
 }
 .splashbuttons {
@@ -649,5 +648,16 @@ background: url('../images/kitchen1.jpeg') no-repeat;
   padding-left: 10px;
   &::-webkit-input-placeholder {
     color: white;
+  }
+}
+
+@media screen and (max-width: 484px) {
+  .mailchimpemail {
+    &::-webkit-input-placeholder {
+      text-align: center;
+    }
+  }
+  .mailchimpsubmit {
+    margin-top: 10px;
   }
 }
