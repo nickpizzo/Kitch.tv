@@ -8,6 +8,7 @@ import Profile from './Profile.jsx';
 import SignUp from './SignUp.jsx';
 import SplashPage from './SplashPage.jsx';
 import MailchimpSignup from './MailchimpSignup.jsx';
+import BetaUser from './BetaUser.jsx';
 
 
 class App extends React.Component {
@@ -40,19 +41,22 @@ class App extends React.Component {
 
     switch(this.state.currentRoute) {
       case 'splash' :
-        currentView = <SplashPage />;
+        currentView = <SplashPage/>;
         break;
       case 'index' :
-        currentView = <Landing />;
+        currentView = <Landing/>;
         break;
       case 'profile' :
-        currentView = <Profile />;
+        currentView = <Profile/>;
         break;
       case 'signUp' :
-        currentView = <SignUp />;
+        currentView = <SignUp/>;
         break;
+      // case 'betaUser' :
+      //   currentView = <BetaUser/>;
+      //   break;
       default :
-        currentView = <SplashPage />;
+        currentView = <SplashPage/>;
     };
 
     return (
