@@ -1,0 +1,19 @@
+.beta-container {
+  margin-left: 25%;
+  margin-right: 25%;
+}
+.beta-banner img {
+  width: 100%;
+}
+.beta-text {
+  padding-top: 1em;
+  padding-bottom: 3em;
+}
+.beta-footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 3em 6em 3em 6em;
+  border-radius: 5px;
+  background-color: #CCCCCC;
+  color: #696969;
+}
